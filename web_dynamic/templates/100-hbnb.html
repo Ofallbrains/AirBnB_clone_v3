@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	F-8">
+	  <link rel="stylesheet" type="text/css" href="../static/styles/4-common.css?{{cache_id}}">
+	    <link rel="stylesheet" type="text/css" href="r.css?{{cache_id}}">
+	      <link reesheet" type="text/css" href=tic/styles/3-footer.css?{{cache_id}}">
+	        <link rel="stylesheet" type="text/css" href="../static/styles/6-filters.css?{{cache_id}}">
+		  <link type="text/css" rel="stylesheet" href="../static/styles/8-places.css?{{cache_id}}">
+		    <../static/images/icon.png" />
+					         <scr//code.jquery.com/jquery-3.2.1.min.js"></script>
+						   <script src="../static/scripts/100-hbnb.js?{{cache_id}}"></script>
+						     <titlee>
+						     </head>
+
+						     <body>
+							       <header>
+								           <div class="logo"></div>
+									       <div id="api_status"></div>
+									         </header>
+										   <div class="container">
+											       <section">
+													      <div class="locations">
+															          <h3>States</h3>
+																          <h4>&nbsp;</h4>
+																	          <div class="popover">
+																			                <ul>
+																					            {% for state in states %}
+																						                <li>
+																								              <h2><input type="checkbox" id="state_filter" data-id="{e}}"> {{ state[0].name }}:</h2>
+																											                     state[1] %}
+																													                     <li><input type="checkbox" id="city_filter" data-id="{{city.id}}"
+																																	               ">{{ city.name }}</li>
+																															                     {              </ul>
+																					            </li>
+																						                {% endfor %}
+																								          </ul>
+																									          </div>
+																										        
+																										        <div class="amenities">
+																												        <h3>Amenities</h3   <h4>&nbsp;</h4>
+																													        <div cl
+																														               <ul>
+																																                   {% for amenity in amenities %}
+																																		               <li><input type="checkbox" id="amenia-id="{{amenity.id}}"
+																																						                data-name="nity.name }}</li>
+																																			                   {% endfor %}
+																																					             </ul>
+																															        </div>
+																																      </d="button">Search</b    </section>
+																																          <div class="placesh1">
+																																		  h1>Places</h1ass="places">
+																																		      </section>
+																																		        </d/footer>
+						     </body>
+
+</html>

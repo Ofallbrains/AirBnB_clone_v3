@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	  <head>
+		      <meta charset="UTF-8"<link rel="stylesheet" type="text/css" href="../static/styles/4-common.css">
+		          <link rel="stylesheet" type="text/css" href="../static/styles/3-header.css">
+			      <link rel="stylesheet" type="text/css" href="../static/styles/3-footer.css">
+			          <link rel="et" type="text/css" href="../static/styles/6-filters.css">
+				      <link type="text/css" rel="stylesheet" href="../static/styles/8-places.css">
+				          <link rel../static/images/icon.png" />
+									         <tBnB</title>
+										 t src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+												<sc="static/scripts/4-hbnb.js"></script>
+															        <>
+																    <header>
+																          ass="logo"></div>
+																	       	_status" class="available">
+
+																			  </div>
+																			      </header>
+																			          <div class="container">
+																					        <section class="filters">
+																								<div class="locations">
+																										  <h3>States</h3>
+																										  	  <h4>&nbsp;</h4>
+																											  	  <div class="popover">
+																													  	    <ul>
+																															    	      {state in states %}
+																																      	      <li>
+																																		      		<h2>{{ state[0].name }}:</hul>
+																																							  {% for city in state[1] %}
+																																							  		  <li>{{ city.name }}</li>
+																																									  		  {% endfor %}
+																																											  		</ul>
+																																														      </li>
+																																														      	      {% endfor %}
+																																															      	    </ul>
+																																																    	  </div>
+																																																	  	</div>
+																																																			<div class="amenities">
+																																																					  <nities< <h4>&nbsp;</h4>
+																																																					  	  <div class="p>
+																																																							      	    <ul>
+																																																								    	      {% for an amenities %}<li><input type="checkbox" data-id=menity.id }}" data-name="{{ amenity.name }}" > {{ amenity.na/li>
+																																																										      	      {% endfo    </ul>
+																																																								    	  </div>
+																																																									  	</div>
+																																																											<button type="button">Search</button>
+																																																											/section <div class="placesh1"><h1>Places</h1><      <section class="places">
+																																																														<!-- <h1>Places</h1> -->
+																																																															
+																																																														      </
+																																																														          </div>
+																																																															      <foo    <p>Holberton School</p>
+																																																															          </footer>
+																																																																    </body>
+</html>

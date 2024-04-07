@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	  <head>
+		      <meta charset="U>
+				         el="stylesheet" type="text/css" href="../static/styles/4-common.css">
+					         <link rel="stylesheet" type="text/css" href="../static/styles/3-header.css">
+							      tylesheet" type="text/css" href="../static/styles/3-footer.css">
+							          <link rel="stylesheet" type="text/css" href="../static/styles/6-filters.css">
+								      <link type="text/css" rel="stylesheet" href="../static/styles/8-places.css">
+								          <link rel../static/images/icon.png" />
+													         <tBnB</title>
+														 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+																     	<sb.js"></script>
+															  </head>
+															    <body>
+																        <header>
+																	      <div class="logo"></div>
+																			      <div class="er">
+																					        <section class="filters">
+																									<div class="locati	  <h3>States</h3>
+																										</h4>
+																											  <div class="popover">
+																												  	  
+																												  	      {% for state in states %}
+																													      	 i>
+																														 		<h2>{{].name }}:</in state[1] %}
+																																			  <li>{{ e }}</li>
+																																			  		ndfor %}
+																																							</ul>
+																																								      </li>
+																																								      	      {% endfor %}
+																																									      	   iv>
+																																										   	</div>
+																																												<div class="amenities">
+																																														  <h3>Amenities</h3>
+																																														  	&nbsp;</h4>
+																																															  <div class=">
+																																																      	    <ul>
+																																																	    	      {% for amenity in amenities %}
+																																																		      	      <li><input type="ch="{{ amenity.id }}" data-name="{{ amenity.name }}" > {{ amenity.n</li>
+																																																			      	      {% endfor %}
+																																																				      	    </ul>
+																																																					    	  </div>
+																																																						  	</div>
+																																																								<button typon">Search</button>
+																																																									            </section>
+																																																										          <div "><h1>Places</h1></div>
+																																																											        <section class="places">
+																																																														<!-- <h1>Places</h1> -->
+																																																															{% for place in places %}
+																																																																<article>
+																																																																		  <div class="title_box">
+																																																																			  	    <h2>{{ place.name }}
+																																																																					    	    <div class="price_by_nlace.price_by_night }}</div>
+																																																																									  </div>
+																																																																									  	class="information">
+																																																																										       	    <div class="max_{{ place.max_guest }} Guef place.max_guest != 1 %}s{% endif %}</div>
+																																																																											      number_rooms">{{ place.number_rooms }} Bedroom{% if place.number_rooms != 1 %}s{% endif %}</div>
+																									            <div class="number_bathrooms">{{ place.number_bathroomathroom{% if place.number_bathrooms != 1 %}s{% endif %}</div>
+																										    	  </div>
+																											  	  <div class="user">
+																													              <b>Owner:</b> {{ place.user.first_name }} {{ place.user.last_name }}    </div>
+																												            <div class="description">
+																														    	    {{ place.description        </div>
+																													    	</article>
+																															{% endfor %}
+																															      </section>
+																															          </div>
+																																      <footer>
+																																	      p>Holberton School</p>
+																																	          </footer>
+																																		    </body>
+</html>

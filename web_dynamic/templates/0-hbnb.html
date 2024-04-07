@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	 
+	    <TF-8">
+		      <link rel="stylesheet" type="text/csatic/styles/4-common.css">
+				     <link rel="stss" href="../static/styles/3-header.css">
+						  ="text/css" href="../static/styles/3-footer.css">
+							      e="text/css" href="../static/styles/6-filters.css">
+								     <link type="text/css" rec/styles/8-places.css">
+								         <link relic/images/icon.png" />BnB</title>
+												       </hea   <header>
+												             <div class="logo"></div>
+															     </headertainer">
+															           <sectirs">
+																	    	<div class="locations">
+																			    	  <h3>States</hbsp;</h4>
+																				  	  <div claover">
+																						  	    <ul>
+																								    	      {% for state in st <li>
+																										      		<h2>{{ state[0].name }}:%}
+																															  <li>{{ cityr %}
+																																  		</ul>
+																																			      	      {% endfor %}
+																																				      	    </ul>
+																																					    	  </div>
+																																						  	</div>
+																																								<diies">
+																																								       	  <h3>Amenities</h3>
+																																									  	  <h4>&nbsp;</h4>
+																																										  	  <div class="popo	    <ul>
+																																													  	      {% for amenity in amenities %}
+																																														      	      <li>{{ 
+																																																      	    </ul>
+																																													  	  </div>
+																																														  	</div>
+																																																<button type="button">Search</button>
+																																																      </section>
+																																																            <div class="placesh1"><h</div>
+																																																	          <section class="places">
+																																																			  	<!-- <h1>Places</h1>{% for place in places %}
+							      	<article>
+									  <div class="title_box">
+									  	    <h2>{{ place.name }}</h2>
+										    	    <div class="price_by_night">${{ place.price_by_	  <div class="information">
+											    	    <div class="max_guest">{{ place.max_guest }} Guest{% .max_guest != 1 %}s{% endif %}<           <div class="number_rooms">{{ place.numms }} Bedroom{% if place.number_rooms != 1 %}s{% endif %}</div>
+												                <div class="number_bathrooms">{{ place.number_bathrooms }} Bathroom{% ifumber_bathrooms != 1 %}s{% endif %}</div>
+															  </div>
+															  	  <div class="user">
+																              <b>Owner:</b> {{ place.user.first_name }} {{ place.user.last_name }}
+																	                </div>
+																			          <div class="description">
+																				  	    {{ place.description | safe }}
+																					              </div>
+																						      	</article>
+																								{% endfor %}
+																								      </section>
+																								          </div>
+																									      <chool</p>
+																									          </footer>
+																										    </body>
+																										    </html
